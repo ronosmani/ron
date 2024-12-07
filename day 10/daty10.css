@@ -1,0 +1,58 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #c91414;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+        nav ul a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #c21616;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+     <header>
+        <ul>
+         <a href="index.html"><li>Home</li></a>
+         <a href="about.html"><li>About</li></a>
+         <a href="services.html"><li>Services</li></a>
+        </ul>
+     </header>
+    </nav>
+    <main>
+      <p>This is our home page</p>
+      <img src="home.png" alt="Home Image"><br>
+    </main>
+    <footer>
+      <a href="https://www.youtube.com/watch?v=NHhTMh0nURA" style="color: white;">Link</a>
+    </footer>
