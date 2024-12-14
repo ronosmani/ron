@@ -1,0 +1,61 @@
+@font-face {
+    font-family: gang of three;
+    src: url(gang_of_three/go3v2.ttf);
+}
+h1{
+    font-family: gang of three;
+    color:blue;
+    letter-spacing: 10px;
+    word-spacing: 25px;
+}
+p{
+text-align: center;
+text-indent: 10px;
+color:blue;
+}
+h2{
+    text-decoration: overline;
+    color:blue;
+}
+h3{
+    text-decoration: line-through;
+    color:blue;
+}
+h4{
+    text-decoration: underline;
+    color:chocolate;
+}
+.p1{
+color:bisque;
+text-align: left;
+background-color: red;
+}
+#p2{
+    color:blue;
+    font-family: normal;
+    text-align: right;
+    font-weight: bold;
+}
+#p3{
+    color:red;
+    font-family: italic;
+    font-weight: bolder;
+}
+#p4{
+    color:chocolate;
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: 700;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:blue;
+}
+a:hover{
+    color:green
+}
+a:active{
+    color:chocolate;
+}
