@@ -1,0 +1,39 @@
+ol{
+    background-color: lightblue;
+    border:1px solid black;
+    list-style-type:armenian;
+}
+ol li{
+    background: lightsalmon;
+    padding: 10px;
+    margin-left: 30px;
+}
+ul{
+    list-style-type: square;
+    border: 1px solid yellow;
+}
+ul li{
+    border: 1px solid grey;
+}
+td,th{
+    border: 1px solid lightpink;
+    padding: 5px;
+}
+tbody tr:nth-child(odd){
+    background-color:blueviolet;
+}
+tbody tr:nth-child(even){
+  background-color:lime;
+}
+div{
+    overflow: scroll;
+    background-color: burlywood;
+    width: 200px;
+    height: 200px;
+}
+#table{
+    width:auto;
+    height:auto;
+    background-color:white;
+    padding;10px
+}
