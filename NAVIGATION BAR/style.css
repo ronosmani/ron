@@ -1,0 +1,47 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+li{
+    float: left;
+    position:relative;
+}
+li a{
+    display: block;
+    color:azure;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration:none;
+}
+li a:hover:not(active){
+    bsckground-coor:lightpink;
+}
+.active{
+    background-color: rgb(79,113,155);
+}
+li ul{
+    display: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:blue;
+    padding:0;
+    min-width:160x;
+} 
+li ul li{
+    float:none;
+}
+li ul li a{
+    padding:10px 16px;
+}
+li ul li a:hover{
+    background-color:blanchedalmond;
+}
+li:hover>ul{
+    display:block;
+}
+li ul li ul{
+    left:100%;
+    top:0;
+}
