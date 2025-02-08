@@ -29,5 +29,31 @@ div.desc{
     height:500px;
     display:inline-block;
     background-position: -500px 0;
-
+}
+a[href="https://shkolladigjitale.com/"]{
+    color:red;
+}
+p[class*="ds"]{
+    background:blue;
+    color:white;
+    padding:20px;
+}
+div[id~="ds"]{
+    background: green;
+    color:aqua;
+    padding:20px;
+}
+img[title^="blue"]{
+    border: 2px solid blue;
+}
+h1[class |="heading"]{
+    background: lime;
+    color:white;
+    padding:20px;
+}
+input[placeholder $="name"]{
+    border: 2px solid red;
+}
+input[readonly]{
+    border: 2px solid green;
 }
