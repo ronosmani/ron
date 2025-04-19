@@ -1,79 +1,120 @@
-body{
+/* Reset */
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
-#navbar{
-    margin-left: auto;
-    margin-right:auto;
-    height: 100%;
-}
-#main-heading{
-    font-size: 28px;
-    color:rgb(255, 255, 255);
-    padding-left: 30px;
-}
-#main-paragraph{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding-left: 30px;
-}
-#section-1{
-    background-color: rgb(40, 55, 255);
-    height: 200px;
-}
-header{
-    padding:55px;
+
+/* Navbar */
+#navbar {
     display: flex;
-    justify-content:space-around;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
 }
-nav ul li{
-    display: inline-block;
-    padding: 10px 16px;
+
+#navbar li {
     background-color: rgb(40, 99, 89);
     border-radius: 5px;
+    padding: 10px 16px;
 }
-nav ul li a{
+
+#navbar li a {
     text-decoration: none;
     color: whitesmoke;
 }
-#league-heading{
-    margin-top: 0px;
-    margin-left: 20px;
-    padding-top: 20px;
-    color: azure;
-}
-#premier-league{
-    border: 2px solid blue;
-    background-color: azure;
-    margin-left: 20px;
-}
-#premier-league tr td{
-    border: 2px solid rgb(60, 60, 196);
-}
-#section-2{
-    background-color: rgb(0, 17, 255);
-    height: 980px;
-}
-.odds-heading{
-    padding-left: 20px;
-    color: azure;
-}
-.favorites{
-    border: 2px solid black;
-    background-color: azure;
-    margin-left: 20px;
-    margin-top: 14px;
-    padding: 1px;
-    margin-bottom: 5px;
-}
-.favorites tr td{
-    border:2px solid black;
-}
-#section-3{
-    margin:0;
-    background-color: rgb(37, 37, 247);
-}
-#mainheading-section3{
-    font-size: 44px;
-    color: white;
 
+/* Section 1 */
+#section-1 {
+    background-color: rgb(40, 55, 255);
+    height: 200px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+/* Section 2 */
+#section-2 {
+    background-color: rgb(0, 17, 255);
+    padding: 20px;
+}
+
+#league-heading,
+.odds-heading {
+    color: azure;
+}
+
+#premier-league {
+    border-collapse: collapse;
+    background-color: azure;
+    width: 95%;
+    margin: 10px auto;
+}
+
+#premier-league th,
+#premier-league td {
+    border: 2px solid rgb(60, 60, 196);
+    padding: 8px;
+    text-align: center;
+}
+
+.favorites {
+    border-collapse: collapse;
+    background-color: azure;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.favorites th,
+.favorites td {
+    border: 2px solid black;
+    padding: 6px;
+    text-align: center;
+}
+
+/* Section 3 */
+#section-3 {
+    background-color: rgb(37, 37, 247);
+    color: white;
+    padding: 20px;
+}
+
+#main-heading-section3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.award-container {
+    display: flex; /* Use flexbox to arrange the items horizontally */
+    justify-content: center;
+    gap: 40px; /* Add some spacing between the images */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.award {
+    text-align: center;
+    flex: 0 1 auto; /* Prevent stretching and allow wrapping if needed */
+}
+
+.award img {
+    width: 250px;
+    height: auto;
+}
+
+.award-paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.awards-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
 }
