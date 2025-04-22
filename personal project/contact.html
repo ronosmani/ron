@@ -3,26 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+    <meta name="description" content="Contact Premier League Hub for inquiries and feedback">
+    <title>Contact Us | Premier League Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="section-1">
+    <!-- Header Section -->
+    <header id="main-header">
         <div class="container">
-            <header>
-                <img src="topi.png-removebg-preview.png"  width="100px">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="footballplayer-removebg-preview.png" alt="Premier League Hub Logo" width="150">
+                    <h1>Premier League Hub</h1>
+                </div>
                 <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                    <ul id="navbar">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </header>
-            <div>
-                <h1 id="main-heading">This is the contact page of our website!</h1>
-                <p id="main-paragraph">On this page u can see our contact details!</p>
-            </div>            
-    </section>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="section-intro">Have questions about Premier League stats or want to provide feedback? Reach out to us!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="data">Data Correction</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>Contact Information</h3>
+                            <ul class="contact-details">
+                                <li>
+                                    <i class="icon">📍</i>
+                                    <span>123 Football Lane, Premier City, UK</span>
+                                </li>
+                                <li>
+                                    <i class="icon">📧</i>
+                                    <span>info@premierleaguehub.com</span>
+                                </li>
+                                <li>
+                                    <i class="icon">📞</i>
+                                    <span>+44 123 456 7890</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="social-links">
+                                <h4>Follow Us</h4>
+                                <div class="social-icons">
+                                    <a href="#" aria-label="Twitter"><span>𝕏</span></a>
+                                    <a href="#" aria-label="Facebook"><span>f</span></a>
+                                    <a href="#" aria-label="Instagram"><span>📷</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="section light-bg">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">Where do you get your Premier League data?</h3>
+                        <div class="faq-answer">
+                            <p>All our data comes from official Premier League sources and is cross-checked with multiple reputable sports statistics providers to ensure accuracy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How often is the information updated?</h3>
+                        <div class="faq-answer">
+                            <p>Our standings and statistics are updated within 2 hours after each match concludes. Odds information is updated daily.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I use your data for my own website?</h3>
+                        <div class="faq-answer">
+                            <p>For data usage inquiries, please contact us through the form above. We're happy to discuss partnership opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you have a mobile app?</h3>
+                        <div class="faq-answer">
+                            <p>Not currently, but our website is fully responsive and works great on mobile devices. We're considering developing an app in the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>All information is sourced from official Premier League websites and MGM Bet. Last updated: <span id="update-date"></span></p>
+            <p>&copy; 2023 Premier League Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add current date to footer
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString();
+        
+        // Simple FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>

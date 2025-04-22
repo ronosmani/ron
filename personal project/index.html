@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier League Hub</title>
+    <meta name="description" content="Latest Premier League standings, odds, and player awards">
+    <title>Premier League Hub | Standings, Odds & Awards</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header Section -->
-    <section id="section-1">
+    <header id="main-header">
         <div class="container">
-            <header>
-                <img src="footballplayer-removebg-preview.png" alt="Football Player" width="150px">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="footballplayer-removebg-preview.png" alt="Premier League Hub Logo" width="150">
+                    <h1>Premier League Hub</h1>
+                </div>
                 <nav>
                     <ul id="navbar">
                         <li class="active"><a href="#">Home</a></li>
@@ -20,305 +26,364 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </header>
-        </div>
-    </section>
-
-    <!-- League Table Section -->
-    <section id="section-2">
-        <h1 id="league-heading">Premier League Table Standings</h1>
-        <table id="premier-league">
-            <thead>
-                <tr>
-                    <th>Number</th>
-                    <th>Team</th>
-                    <th>Points</th>
-                    <th>Wins</th>
-                    <th>Draws</th>
-                    <th>Losses</th>
-                    <th>GD</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Teams listed here (unchanged data) -->
-                <!-- You can insert the rows here from your original code -->
-                <!-- Keeping only first 3 rows here for brevity -->
-                <tr>
-                    <td>1</td>
-                    <td>Liverpool</td>
-                    <td>70</td>
-                    <td>21</td>
-                    <td>7</td>
-                    <td>1</td>
-                    <td>42</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Arsenal</td>
-                    <td>58</td>
-                    <td>16</td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Nottingham</td>
-                    <td>54</td>
-                    <td>16</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Chelsea</td>
-                    <td>49</td>
-                    <td>14</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Man City</td>
-                    <td>48</td>
-                    <td>14</td>
-                    <td>6</td>
-                    <td>9</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Newcastle</td>
-                    <td>47</td>
-                    <td>14</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Brighton</td>
-                    <td>47</td>
-                    <td>12</td>
-                    <td>11</td>
-                    <td>6</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Fulham</td>
-                    <td>45</td>
-                    <td>12</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Aston Villa</td>
-                    <td>45</td>
-                    <td>12</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>-4</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Bournemouth</td>
-                    <td>44</td>
-                    <td>12</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Brentford</td>
-                    <td>41</td>
-                    <td>12</td>
-                    <td>5</td>
-                    <td>12</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Crystal Palace</td>
-                    <td>39</td>
-                    <td>10</td>
-                    <td>9</td>
-                    <td>9</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>Man United</td>
-                    <td>37</td>
-                    <td>10</td>
-                    <td>7</td>
-                    <td>12</td>
-                    <td>-3</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>Tottenham</td>
-                    <td>34</td>
-                    <td>10</td>
-                    <td>4</td>
-                    <td>15</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Everton</td>
-                    <td>34</td>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>9</td>
-                    <td>-4</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>West Ham</td>
-                    <td>34</td>
-                    <td>9</td>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>-16</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>Wolverhampton</td>
-                    <td>26</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>17</td>
-                    <td>-18</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>Ipswich</td>
-                    <td>17</td>
-                    <td>3</td>
-                    <td>8</td>
-                    <td>18</td>
-                    <td>-34</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>Leicester</td>
-                    <td>17</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>20</td>
-                    <td>-40</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>Southampton</td>
-                    <td>9</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>24</td>
-                    <td>-40</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- Odds Section -->
-        <div class="odds">
-            <h2 class="odds-heading">Top 3 Favorites to Win Premier League and Odds</h2>
-            <table class="favorites">
-                <thead>
-                    <tr>
-                        <th>Ranking</th>
-                        <th>Team</th>
-                        <th>Odds</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Liverpool</td><td>-5000</td></tr>
-                    <tr><td>2</td><td>Arsenal</td><td>+2500</td></tr>
-                    <tr><td>3</td><td>Nottingham</td><td>+25000</td></tr>
-                </tbody>
-            </table>
-
-            <h2 class="odds-heading">Top 3 Favorites to Get Relegated and Odds</h2>
-            <table class="favorites">
-                <thead>
-                    <tr>
-                        <th>Ranking</th>
-                        <th>Team</th>
-                        <th>Odds</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Southampton</td><td>-10000</td></tr>
-                    <tr><td>2</td><td>Leicester</td><td>-2500</td></tr>
-                    <tr><td>3</td><td>Ipswich</td><td>-1000</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="section-3">
-        <h2 id="main-heading-section3">Individual Awards Favorites</h2>
-        <div id="golden-boot">
-        <h2 class="awards-heading">Golden Boot Favorites</h2>
-        <div class="award">
-            <h3>1. Mohamed Salah: -150</h3>
-            <img src="mohamed-salah.png" alt="Mohamed Salah">
-        </div>
-        <div class="award">
-            <h3>2. Erling Haaland: +150</h3>
-            <img src="haland-removebg-preview.png" alt="Erling Haaland">
-        </div>
-        <div class="award">
-            <h3>3. Alexander Isak: +900</h3>
-            <img src="alexander-isak.png" alt="Alexander Isak">
-        </div>
-        <p class="award-paragraph">
-            Taking a spin around the oddsmakers' preferences: Salah is the favorite to finish top scorer at -150, then comes Haaland at +150, with Isak at +900. Palmer sits at +1200, while Nicolas Jackson and Chris Wood are at +4000 and +5000 respectively.
-        </p>
-        </div>
-        <div id="player-the-year">
-        <h2 class="awards-heading">Player of the year favorites</h2>
-        <div class="award">
-            <h3>1. Mohamed Salah: -167</h3>
-            <img src="mohamed-salah.png" alt="Mohamed Salah">
-        </div>
-        <div class="award">
-            <h3>2. Alexander Isak: +175</h3>
-            <img src="alexander-isak.png" alt="Alexander Isak">
-        </div>
-        <div class="award">
-            <h3>3. Virgil van Dijk: +600</h3>
-            <img src="van-dijk.png" alt="Virgil Van Dijk">
-        </div>
-        <p class="award-paragraph">Behind Salah is his top Golden Boot competitor, Alexander Isak, who has netted 20 goals and provided 6 assists in only 28 PL appearances, while Liverpool captain Virgil van Dijk scored a crucial goal on the weekend and takes the third place rightfully on the list as per MGM Bet.</p>
-        </div>
-        <div id="player-the-year">
-            <h2 class="awards-heading">Golden Glove Favorites</h2>
-            <div class="award">
-                <h3>1. Matz Sels: -500</h3>
-                <img src="matz-sels.png" alt="Matz Sels">
             </div>
-            <div class="award">
-                <h3>2. David Raya: +335</h3>
-                <img src="david-raya.png" alt="David Raya">
+        </div>
+    </header>
+
+    <main>
+        <!-- League Table Section -->
+        <section id="standings" class="section">
+            <div class="container">
+                <h2>Premier League Table Standings</h2>
+                <div class="table-wrapper">
+                    <table id="premier-league">
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Team</th>
+                                <th>Pts</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Teams data remains the same -->
+                            <tr>
+                                <td>1</td>
+                                <td>Liverpool</td>
+                                <td>70</td>
+                                <td>21</td>
+                                <td>7</td>
+                                <td>1</td>
+                                <td>42</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Arsenal</td>
+                                <td>58</td>
+                                <td>16</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Nottingham</td>
+                                <td>54</td>
+                                <td>16</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Chelsea</td>
+                                <td>49</td>
+                                <td>14</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Man City</td>
+                                <td>48</td>
+                                <td>14</td>
+                                <td>6</td>
+                                <td>9</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Newcastle</td>
+                                <td>47</td>
+                                <td>14</td>
+                                <td>5</td>
+                                <td>9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Brighton</td>
+                                <td>47</td>
+                                <td>12</td>
+                                <td>11</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Fulham</td>
+                                <td>45</td>
+                                <td>12</td>
+                                <td>9</td>
+                                <td>8</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Aston Villa</td>
+                                <td>45</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>-4</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Bournemouth</td>
+                                <td>44</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Brentford</td>
+                                <td>41</td>
+                                <td>12</td>
+                                <td>5</td>
+                                <td>12</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Crystal Palace</td>
+                                <td>39</td>
+                                <td>10</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Man United</td>
+                                <td>37</td>
+                                <td>10</td>
+                                <td>7</td>
+                                <td>12</td>
+                                <td>-3</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Tottenham</td>
+                                <td>34</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>15</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Everton</td>
+                                <td>34</td>
+                                <td>7</td>
+                                <td>13</td>
+                                <td>9</td>
+                                <td>-4</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>West Ham</td>
+                                <td>34</td>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>13</td>
+                                <td>-16</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Wolverhampton</td>
+                                <td>26</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>17</td>
+                                <td>-18</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Ipswich</td>
+                                <td>17</td>
+                                <td>3</td>
+                                <td>8</td>
+                                <td>18</td>
+                                <td>-34</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Leicester</td>
+                                <td>17</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>20</td>
+                                <td>-40</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Southampton</td>
+                                <td>9</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>24</td>
+                                <td>-40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="odds-section">
+                    <div class="odds-card">
+                        <h3>Top 3 Favorites to Win</h3>
+                        <table class="odds-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team</th>
+                                    <th>Odds</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Liverpool</td><td>-5000</td></tr>
+                                <tr><td>2</td><td>Arsenal</td><td>+2500</td></tr>
+                                <tr><td>3</td><td>Nottingham</td><td>+25000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="odds-card">
+                        <h3>Top 3 Relegation Favorites</h3>
+                        <table class="odds-table">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team</th>
+                                    <th>Odds</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Southampton</td><td>-10000</td></tr>
+                                <tr><td>2</td><td>Leicester</td><td>-2500</td></tr>
+                                <tr><td>3</td><td>Ipswich</td><td>-1000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="award">
-                <h3>3. Jordan Pickford: +3300</h3>
-                <img src="jordan-pickford.png" alt="Jordan Pickford">
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section">
+            <div class="container">
+                <h2>Individual Awards Favorites</h2>
+                
+                <div class="awards-grid">
+                    <article class="award-category">
+                        <h3>Golden Boot</h3>
+                        <div class="award-winners">
+                            <div class="player-card">
+                                <img src="mohamed-salah.png" alt="Mohamed Salah">
+                                <div class="player-info">
+                                    <h4>Mohamed Salah</h4>
+                                    <span class="odds-value">-150</span>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <img src="haland-removebg-preview.png" alt="Haaland">
+                                <div class="player-info">
+                                    <h4>Erling Haaland</h4>
+                                    <span class="odds-value">+150</span>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <img src="alexander-isak.png" alt="Isak">
+                                <div class="player-info">
+                                    <h4>Alexander Isak</h4>
+                                    <span class="odds-value">+950</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="award-description">
+                            Taking a spin around the oddsmakers' preferences: Salah is the favorite to finish top scorer at -150, then comes Haaland at +150, with Isak at +900.
+                        </p>
+                    </article>
+
+                    <article class="award-category">
+                        <h3>Player of the Year</h3>
+                        <div class="award-winners">
+                            <div class="player-card">
+                                <img src="mohamed-salah.png" alt="Mohamed Salah">
+                                <div class="player-info">
+                                    <h4>Mohamed Salah</h4>
+                                    <span class="odds-value">-167</span>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <img src="alexander-isak.png" alt="Isak">
+                                <div class="player-info">
+                                    <h4>Alexander Isak</h4>
+                                    <span class="odds-value">+175</span>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <img src="van-dijk.png" alt="Van Dijk">
+                                <div class="player-info">
+                                    <h4>Van Dijk</h4>
+                                    <span class="odds-value">+600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="award-description">
+                            Behind Salah is his top Golden Boot competitor, Alexander Isak, who has netted 20 goals and provided 6 assists in only 28 PL appearances.
+                        </p>
+                    </article>
+
+                    <article class="award-category">
+                        <h3>Golden Glove</h3>
+                        <div class="award-winners">
+                            <div class="player-card">
+                                <img src="matz-sels.png" alt="Matz Sels">
+                                <div class="player-info">
+                                    <h4>Matz Sels</h4>
+                                    <span class="odds-value">-500</span>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <img src="david-raya.png" alt="David Raya">
+                                <div class="player-info">
+                                    <h4>David Raya</h4>
+                                    <span class="odds-value">+335</span>
+                                </div>
+                            </div>
+                            <div class="player-card">
+                                <img src="jordan-pickford.png" alt="Jordan Pickford">
+                                <div class="player-info">
+                                    <h4>Jordan Pickford</h4>
+                                    <span class="odds-value">+3300</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="award-description">
+                            Forest has an easier run-in than Arsenal for the rest of the Premier League season and Sels should be confident of keeping the Golden Glove.
+                        </p>
+                    </article>
+                </div>
             </div>
-            <p class="award-paragraph">Forest has an easier run-in than Arsenal for the rest of the Premier League season and Sels should be confident of keeping the Golden Glove ahead of David Raya, who would be facing attacking sides like Brentford, Liverpool, and Newcastle United.</p>
-            </div>
-    </section>
-    <section id="section-4">
-        <h2>Credits:</h2>
-        <p>All the information was taken from the official Premier League websites and other sources.And the odds were taken from the official MGM Bet website</p>
-    </section>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>All information is sourced from official Premier League websites and MGM Bet. Last updated: <span id="update-date"></span></p>
+            <p>&copy; 2023 Premier League Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add current date to footer
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>

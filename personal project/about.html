@@ -3,42 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Learn about Premier League Hub and our mission">
+    <title>About Us | Premier League Hub</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="section-1">
+    <!-- Header Section -->
+    <header id="main-header">
         <div class="container">
-            <header>
-                <img src="topi.png-removebg-preview.png"  width="100px">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="footballplayer-removebg-preview.png" alt="Premier League Hub Logo" width="150">
+                    <h1>Premier League Hub</h1>
+                </div>
                 <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                    <ul id="navbar">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </header>
+            </div>
         </div>
-    </section>
-            <section class="about-us">
-                <div class="container">
-                    <h1>About Us</h1>
-                    <p>Welcome to Premier League Award Odds – your go-to source for the latest betting odds and predictions on the biggest awards in English football!</p>
-                    <p>We specialize in providing up-to-date odds and analysis on a wide range of Premier League awards, including Player of the Season, Golden Boot, Manager of the Season, and more. Our team works tirelessly to ensure that all the odds and predictions we share are as accurate as possible to help you make informed betting decisions.</p>
-                    <h2>What We Do</h2>
-                    <p>At Premier League Award Odds, we track and update betting odds from various trusted bookmakers to provide you with the most accurate and up-to-date information available. Whether you're a casual fan or an avid bettor, our platform makes it easy for you to stay informed on all the latest award predictions.</p>
-                    
-                    <h2>Our Mission</h2>
-                    <p>We aim to be the most trusted and user-friendly platform for Premier League betting odds and analysis. Our mission is to help our users navigate the world of football betting and offer insightful data to improve their betting strategies.</p>
-                    
-                    <h2>Contact Us</h2>
-                    <p>If you have any questions or would like to get in touch with our team, feel free to reach out to us at <a href="mailto:contact@premierleagueawardodds.com">contact@premierleagueawardodds.com</a></p>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about-hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Your Ultimate Premier League Resource</h2>
+                    <p class="hero-subtitle">Passionate about football, dedicated to accuracy</p>
                 </div>
-            </section>
-        
-            <footer>
-                <p>&copy; 2025 Premier League Award Odds. All rights reserved.</p>
-            </footer>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="our-story" class="section">
+            <div class="container">
+                <h2>Our Story</h2>
+                <div class="two-column">
+                    <div class="column-text">
+                        <p>Founded in 2023, Premier League Hub began as a passion project between three football enthusiasts who wanted to create the most comprehensive and accessible Premier League statistics platform.</p>
+                        <p>What started as a simple spreadsheet shared among friends has grown into a trusted resource for thousands of fans, fantasy football players, and sports analysts worldwide.</p>
+                        <p>We're proud to remain independent and fan-focused, putting the beautiful game above all else.</p>
+                    </div>
+                    <div class="column-image">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Football fans celebrating" class="story-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="our-mission" class="section light-bg">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <div class="mission-statement">
+                    <blockquote>
+                        "To provide football fans with the most accurate, up-to-date Premier League statistics in an accessible and visually engaging format."
+                    </blockquote>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">⚽</div>
+                        <h3>Accuracy</h3>
+                        <p>We triple-check all our data against official sources to ensure you get reliable information.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">📊</div>
+                        <h3>Depth</h3>
+                        <p>Beyond basic stats, we provide insights and analysis to enhance your understanding of the game.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">❤️</div>
+                        <h3>Passion</h3>
+                        <p>Created by fans, for fans. Football isn't just data - it's emotion, drama, and community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="our-team" class="section">
+            <div class="container">
+                <h2>Meet The Team</h2>
+                <p class="section-intro">The passionate individuals behind Premier League Hub</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson" class="member-photo">
+                        <h3>Alex Johnson</h3>
+                        <p class="member-title">Founder & Lead Statistician</p>
+                        <p class="member-bio">Former football analyst with 10+ years experience in sports data. Liverpool FC supporter.</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams" class="member-photo">
+                        <h3>Sarah Williams</h3>
+                        <p class="member-title">Head of Design</p>
+                        <p class="member-bio">Makes stats beautiful. Arsenal supporter (we don't hold it against her).</p>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Jamie Brown" class="member-photo">
+                        <h3>Jamie Brown</h3>
+                        <p class="member-title">Developer</p>
+                        <p class="member-bio">Turns data into interactive experiences. Manchester City supporter.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="our-community" class="section light-bg">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <div class="community-content">
+                    <div class="community-text">
+                        <h3>100,000+ Football Fans Can't Be Wrong</h3>
+                        <p>We're proud to serve a growing community of Premier League enthusiasts from around the world.</p>
+                        <p>Join our newsletter for weekly stats roundups, or follow us on social media to be part of the conversation.</p>
+                        <a href="contact.html" class="btn-cta">Get In Touch</a>
+                    </div>
+                    <div class="community-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100K+</div>
+                            <div class="stat-label">Monthly Visitors</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Stats Updates</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>All information is sourced from official Premier League websites and MGM Bet. Last updated: <span id="update-date"></span></p>
+            <p>&copy; 2023 Premier League Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add current date to footer
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>

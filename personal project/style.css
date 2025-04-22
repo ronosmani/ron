@@ -1,120 +1,281 @@
-/* Reset */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+:root {
+    --primary-color: #37003c;
+    --secondary-color: #00ff87;
+    --accent-color: #e90052;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-light: #f9f9f9;
+    --bg-dark: #1a1a1a;
+    --table-header-bg: #2a2a2a;
+    --table-row-even: #f2f2f2;
+    --table-row-odd: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
 }
 
-/* Navbar */
-#navbar {
-    display: flex;
-    gap: 10px;
-    list-style-type: none;
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+#main-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Navigation */
+#navbar {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
 #navbar li {
-    background-color: rgb(40, 99, 89);
-    border-radius: 5px;
-    padding: 10px 16px;
+    transition: var(--transition);
 }
 
 #navbar li a {
+    color: var(--text-light);
     text-decoration: none;
-    color: whitesmoke;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
 }
 
-/* Section 1 */
-#section-1 {
-    background-color: rgb(40, 55, 255);
-    height: 200px;
+#navbar li.active a,
+#navbar li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-header {
+/* Section Styles */
+.section {
+    padding: 3rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 0.5rem auto;
+}
+
+/* Table Styles */
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--table-row-odd);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--table-header-bg);
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-row-even);
+}
+
+tr:hover {
+    background-color: #e6e6e6;
+}
+
+/* Odds Section */
+.odds-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.odds-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.odds-card h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.odds-table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.odds-table th {
+    background-color: var(--primary-color);
+}
+
+/* Awards Section */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.award-category {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.award-winners {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.player-card {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 60px;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
 }
 
-/* Section 2 */
-#section-2 {
-    background-color: rgb(0, 17, 255);
-    padding: 20px;
+.player-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
 }
 
-#league-heading,
-.odds-heading {
-    color: azure;
+.player-info {
+    flex: 1;
 }
 
-#premier-league {
-    border-collapse: collapse;
-    background-color: azure;
-    width: 95%;
-    margin: 10px auto;
+.player-info h4 {
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
 }
 
-#premier-league th,
-#premier-league td {
-    border: 2px solid rgb(60, 60, 196);
-    padding: 8px;
-    text-align: center;
-}
-
-.favorites {
-    border-collapse: collapse;
-    background-color: azure;
-    width: 80%;
-    margin: 15px auto;
-}
-
-.favorites th,
-.favorites td {
-    border: 2px solid black;
-    padding: 6px;
-    text-align: center;
-}
-
-/* Section 3 */
-#section-3 {
-    background-color: rgb(37, 37, 247);
+.odds-value {
+    display: inline-block;
+    background: var(--accent-color);
     color: white;
-    padding: 20px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
 }
 
-#main-heading-section3 {
-    font-size: 36px;
+.award-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+#main-footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem 0;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.award-container {
-    display: flex; /* Use flexbox to arrange the items horizontally */
-    justify-content: center;
-    gap: 40px; /* Add some spacing between the images */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+#main-footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
-.award {
-    text-align: center;
-    flex: 0 1 auto; /* Prevent stretching and allow wrapping if needed */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
 }
 
-.award img {
-    width: 250px;
-    height: auto;
-}
-
-.award-paragraph {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.awards-heading {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
+@media (max-width: 480px) {
+    .player-card {
+        flex-direction: column;
+        text-align: center;
+    }
 }
