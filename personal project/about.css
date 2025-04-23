@@ -6,6 +6,42 @@
     padding: 120px 0;
     text-align: center;
 }
+/* Navbar Styles */
+.main-header {
+    background-color: #38003C;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .main-nav .active a,
+  .main-nav a:hover {
+    background-color: #00FF85;
+    color: #38003C;
+  }
 
 .about-hero .hero-content {
     max-width: 800px;
