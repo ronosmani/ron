@@ -3,164 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Premier League Hub and our mission">
     <title>About Us | Premier League Hub</title>
-    <link rel="stylesheet" href="about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header id="main-header">
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    LIVE MATCHDAY 28
+                </div>
+                <div class="nav-links">
+                    <a href="#"><i class="fas fa-bell"></i> Alerts</a>
+                    <a href="#"><i class="fas fa-user"></i> Sign In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
+    <header class="main-header">
         <div class="container">
             <div class="header-content">
-                <div class="logo-container">
-                    <img src="footballplayer-removebg-preview.png" alt="Premier League Hub Logo" width="150">
-                    <h1>Premier League Hub</h1>
-                </div>
-                <nav>
-                    <ul id="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/pl-logo.png" alt="Premier League Hub">
+                    <span>HUB</span>
+                </a>
+                
+                <nav class="main-nav">
+                    <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="matches.html">Matches</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="stats.html">Stats</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
                     </ul>
                 </nav>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Search players, matches...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="about-hero" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Your Ultimate Premier League Resource</h2>
-                    <p class="hero-subtitle">Passionate about football, dedicated to accuracy</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Story Section -->
-        <section id="our-story" class="section">
-            <div class="container">
-                <h2>Our Story</h2>
-                <div class="two-column">
-                    <div class="column-text">
-                        <p>Founded in 2023, Premier League Hub began as a passion project between three football enthusiasts who wanted to create the most comprehensive and accessible Premier League statistics platform.</p>
-                        <p>What started as a simple spreadsheet shared among friends has grown into a trusted resource for thousands of fans, fantasy football players, and sports analysts worldwide.</p>
-                        <p>We're proud to remain independent and fan-focused, putting the beautiful game above all else.</p>
-                    </div>
-                    <div class="column-image">
-                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Football fans celebrating" class="story-image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mission Section -->
-        <section id="our-mission" class="section light-bg">
-            <div class="container">
-                <h2>Our Mission</h2>
-                <div class="mission-statement">
-                    <blockquote>
-                        "To provide football fans with the most accurate, up-to-date Premier League statistics in an accessible and visually engaging format."
-                    </blockquote>
-                </div>
-                
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">⚽</div>
-                        <h3>Accuracy</h3>
-                        <p>We triple-check all our data against official sources to ensure you get reliable information.</p>
-                    </div>
-                    
-                    <div class="value-card">
-                        <div class="value-icon">📊</div>
-                        <h3>Depth</h3>
-                        <p>Beyond basic stats, we provide insights and analysis to enhance your understanding of the game.</p>
-                    </div>
-                    
-                    <div class="value-card">
-                        <div class="value-icon">❤️</div>
-                        <h3>Passion</h3>
-                        <p>Created by fans, for fans. Football isn't just data - it's emotion, drama, and community.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <section id="our-team" class="section">
-            <div class="container">
-                <h2>Meet The Team</h2>
-                <p class="section-intro">The passionate individuals behind Premier League Hub</p>
-                
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson" class="member-photo">
-                        <h3>Alex Johnson</h3>
-                        <p class="member-title">Founder & Lead Statistician</p>
-                        <p class="member-bio">Former football analyst with 10+ years experience in sports data. Liverpool FC supporter.</p>
-                    </div>
-                    
-                    <div class="team-member">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Williams" class="member-photo">
-                        <h3>Sarah Williams</h3>
-                        <p class="member-title">Head of Design</p>
-                        <p class="member-bio">Makes stats beautiful. Arsenal supporter (we don't hold it against her).</p>
-                    </div>
-                    
-                    <div class="team-member">
-                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Jamie Brown" class="member-photo">
-                        <h3>Jamie Brown</h3>
-                        <p class="member-title">Developer</p>
-                        <p class="member-bio">Turns data into interactive experiences. Manchester City supporter.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Community Section -->
-        <section id="our-community" class="section light-bg">
-            <div class="container">
-                <h2>Join Our Community</h2>
-                <div class="community-content">
-                    <div class="community-text">
-                        <h3>100,000+ Football Fans Can't Be Wrong</h3>
-                        <p>We're proud to serve a growing community of Premier League enthusiasts from around the world.</p>
-                        <p>Join our newsletter for weekly stats roundups, or follow us on social media to be part of the conversation.</p>
-                        <a href="contact.html" class="btn-cta">Get In Touch</a>
-                    </div>
-                    <div class="community-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">100K+</div>
-                            <div class="stat-label">Monthly Visitors</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">20+</div>
-                            <div class="stat-label">Countries</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Stats Updates</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="main-footer">
+    <!-- About Hero -->
+    <section class="about-hero">
         <div class="container">
-            <p>All information is sourced from official Premier League websites and MGM Bet. Last updated: <span id="update-date"></span></p>
-            <p>&copy; 2023 Premier League Hub. All rights reserved.</p>
+            <div class="hero-content">
+                <h1>About Premier League Hub</h1>
+                <p class="hero-subtitle">Your ultimate source for Premier League statistics, analysis, and insights</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p class="section-description">From passionate fans to the most comprehensive Premier League stats resource</p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="images/about-story.jpg" alt="Our team analyzing football stats">
+                </div>
+                <div class="story-text">
+                    <p>Founded in 2018 by three football-obsessed friends, Premier League Hub began as a simple spreadsheet shared among our fantasy football group. Frustrated by the lack of accessible, comprehensive statistics, we set out to create something better.</p>
+                    <p>What started as a hobby project has grown into the most trusted Premier League statistics platform, serving over 100,000 fans, journalists, and analysts every month.</p>
+                    <p>We remain independent and fan-focused, putting the beautiful game above all else. Our mission is to make Premier League data accessible to everyone, from casual fans to professional analysts.</p>
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100K+</span>
+                            <span class="stat-label">Monthly Users</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5M+</span>
+                            <span class="stat-label">Data Points</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="our-values">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Values</h2>
+                <p class="section-description">What drives everything we do at Premier League Hub</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Accuracy</h3>
+                    <p>Every stat is verified against multiple official sources before publication. We triple-check our data to ensure you get reliable information.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Speed</h3>
+                    <p>Real-time updates mean you never miss a crucial performance change. Our systems update continuously during matches.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Insight</h3>
+                    <p>We don't just show numbers - we help you understand what they mean with clear visualizations and expert analysis.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>Created by fans, for fans. Football is in our DNA, and it shows in everything we build.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet The Team</h2>
+                <p class="section-description">The football-obsessed minds behind Premier League Hub</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team/alex.jpg" alt="Alex Johnson">
+                        <div class="team-badge liverpool"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Alex Johnson</h3>
+                        <p class="position">Founder & Lead Statistician</p>
+                        <p class="bio">Former Premier League data analyst with 10+ years experience in sports statistics. Liverpool FC supporter.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team/sarah.jpg" alt="Sarah Williams">
+                        <div class="team-badge arsenal"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Williams</h3>
+                        <p class="position">Head of Design</p>
+                        <p class="bio">Transforms complex data into beautiful, intuitive visualizations. Arsenal supporter (we don't hold it against her).</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team/jamie.jpg" alt="Jamie Brown">
+                        <div class="team-badge mancity"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Jamie Brown</h3>
+                        <p class="position">Lead Developer</p>
+                        <p class="bio">Builds the technology that makes our data accessible worldwide. Manchester City supporter.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-stack-overflow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Community Says</h2>
+                <p class="section-description">Trusted by fans, journalists, and fantasy football managers</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a fantasy football manager, Premier League Hub has transformed my decision-making. The depth of stats is unmatched."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/mark.jpg" alt="Mark T.">
+                        <div>
+                            <h4>Mark T.</h4>
+                            <span>Fantasy Football Champion</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I use Premier League Hub for my sports journalism work. The accuracy and presentation save me hours of research."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/sarah.jpg" alt="Sarah K.">
+                        <div>
+                            <h4>Sarah K.</h4>
+                            <span>Sports Journalist</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The best part? Even as a casual fan, the insights are presented in a way that's easy to understand and appreciate."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/james.jpg" alt="James L.">
+                        <div>
+                            <h4>James L.</h4>
+                            <span>Season Ticket Holder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Explore Premier League Like Never Before?</h2>
+                <p>Join over 100,000 fans who trust Premier League Hub for the most accurate, insightful stats and analysis.</p>
+                <div class="cta-buttons">
+                    <a href="index.html" class="btn-primary">View Live Stats</a>
+                    <a href="contact.html" class="btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo">
+                        <img src="images/pl-logo-white.png" alt="Premier League Hub">
+                        <span>HUB</span>
+                    </div>
+                    <p>The ultimate destination for Premier League stats, news, and analysis.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Competitions</h3>
+                    <ul>
+                        <li><a href="#">Premier League</a></li>
+                        <li><a href="#">FA Cup</a></li>
+                        <li><a href="#">Carabao Cup</a></li>
+                        <li><a href="#">Champions League</a></li>
+                        <li><a href="#">Europa League</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><a href="#">Live Scores</a></li>
+                        <li><a href="#">Fixtures</a></li>
+                        <li><a href="#">Tables</a></li>
+                        <li><a href="#">Stats Centre</a></li>
+                        <li><a href="#">Fantasy Football</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Premier League Hub. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Add current date to footer
-        document.getElementById('update-date').textContent = new Date().toLocaleDateString();
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
