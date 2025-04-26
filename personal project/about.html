@@ -7,35 +7,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Main Header -->
-    <header class="main-header">
+    <header id="main-header">
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">
-                    <img src="footballplayer-removebg-preview.png" alt="Premier League Hub">
-                </a>
-                
-                <nav class="main-nav">
-                    <ul>
+                <div class="logo-container">
+                    <img src="footballplayer-removebg-preview.png" alt="Premier League Hub Logo" width="150">
+                    <h1>Premier League Hub</h1>
+                </div>
+                <nav>
+                    <ul id="navbar">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
+                        <li class="active"><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-                
-                <div class="search-box">
-                    <input type="text" placeholder="Search players, matches...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </div>
         </div>
     </header>
+
 
     <!-- About Hero -->
     <section class="about-hero">

@@ -7,7 +7,7 @@
     text-align: center;
 }
 /* Navbar Styles */
-.main-header {
+/* .main-header {
     background-color: #38003C;
     color: white;
     padding: 15px 0;
@@ -41,7 +41,7 @@
   .main-nav a:hover {
     background-color: #00FF85;
     color: #38003C;
-  }
+  } */
 
 .about-hero .hero-content {
     max-width: 800px;
