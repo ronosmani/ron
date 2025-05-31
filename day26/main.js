@@ -16,7 +16,13 @@ var button = document.getElementById("button-id");
 var text = document.getElementById("text-id");
 
 button.onclick=function(){
-    text.innerHTML = input.value;
+    if(input.value>10){
+        text.innerHTML = "Input value is bigger than 10";
+    }else if(input.value==10){
+        text.innerHTML = "Input value is equals to 10";
+    }else{
+        text.innerHTML = "Input value is less than 10";
+    }
 };
 
 var input1 = document.querySelector('#input-1');
