@@ -33,3 +33,17 @@ $('#btn4').click(function(){
 $('#btn3').click(function(){
     $('.hidden').show('slow');
 })
+
+$('#square').click(function(){
+    $('#square').animate({
+        'left': '+=50',
+        'opacity' : 0.25,
+        'fontSize' : '100px',
+    })
+})
+
+$('#sort').sortable();
+
+$(function(){
+    $("#accordion").accordion();
+})
